@@ -1,8 +1,4 @@
 
-window.onerror = function (msg) {
-		console.log(msg);
-}
-
 let clos = function(){
 	document.querySelector('#help_cont').innerHTML = `
 		<div id="unvisible">
