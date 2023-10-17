@@ -1,8 +1,4 @@
 
-window.onerror = function (msg) {
-    alert(msg );
-}
-
 let clos = function(){
 	document.querySelector('#help_cont').innerHTML = `
 		<div id="unvisible">
@@ -12,6 +8,7 @@ let clos = function(){
 	document.querySelector('#helper').disabled = false;
 }
 
+let time_out;
 let time = 30;
 let time_interval = 3
 let rand = function(){
@@ -23,7 +20,7 @@ let func_btn = function(){
 	let btn = document.querySelectorAll(".btn");
 	let random = rand();
 	document.querySelector(`#${random}`).classList.add("red");
-	setTimeout(() => document.querySelector(`#${random}`).classList.remove("red"), Number(`${time_interval}000`))
+	time_out = setTimeout(() => document.querySelector(`#${random}`).classList.remove("red"), Number(`${time_interval}000`))
 }
 
 let score = 0;
@@ -45,7 +42,6 @@ let start = function(){
 	document.querySelector("#score").innerHTML = `${score}`;
 	document.querySelector("#time").innerHTML = `${time}`;
 	document.querySelector("#start_button").disabled = true;
-	let name = document.querySelector("#name").value
 	let interval = setInterval(func_btn, 500)
 	let timer = setInterval(() => {
 		document.querySelector("#time").innerHTML = time;
@@ -55,10 +51,12 @@ let start = function(){
 		}
 	}, 1000);
 	setTimeout(() => {
+		let name = document.querySelector("#name").value
+		clearTimeout(time_out);
+		clearInterval(interval);
 		if (name === ""){
 			name = "anonymous"
 		}
-		clearInterval(interval);
 		clearInterval(timer);
 		let name_score = {}
 		if (localStorage.getItem("user") !== ""){
