@@ -1,0 +1,32 @@
+body{
+	font-family: arial;
+	background-color: rgb(111, 84, 230);
+}
+
+button{
+	cursor: pointer;
+}
+
+h1{
+	font-family: 'Handjet', cursive;
+	margin-left:44.5%;
+}
+
+.link{
+	background-color: #61ce70;
+	color: #fff;
+	border: none;
+	padding: 20px 40px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-family: var(--e-global-typography-accent-font-family ), Sans-serif;
+    font-weight: var(--e-global-typography-accent-font-weight );
+}
+
+.flex_row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 100px;
+	margin-right: 100px;
+}

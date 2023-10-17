@@ -1,0 +1,100 @@
+body{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: 0;
+}
+
+button{
+	cursor: pointer;
+}
+
+h1{
+	font-family: 'Handjet', cursive;
+	margin-left:45%;
+}
+
+.black{
+	color: black;
+	transition: 1s;
+}
+
+.div{
+	color: black;
+	background-color: black;
+	padding: 15px;
+}
+
+.red{
+	color: red;
+	background-color: red;
+	transition: 1s;
+}
+
+.green{
+	color: red;
+	background-color: green;
+	transition: 1s;
+}
+
+.flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+}
+
+.history{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 45%;
+}
+
+#parts{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#help_container{
+	position: absolute;
+	background-color: red;
+	width: 510px;
+	height: 46px;
+	left: 33%;
+	top: 20%;
+}
+
+#help_con{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#help{
+	position: absolute;
+	width: 500px;
+	background-color: white;
+	left: 5px;
+	top: 5px;
+}
+
+#unvisible{
+	position: absolute;
+	opacity: 0;
+}
+
+#close{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: red;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			game for 1
+		</title>
+		
+		<script type="text/javascript" src="script_site.js"></script>
+		
+		<!--<script type="text/javascript" src="../bootstrap-5.3.1-dist/js/bootstrap.bundle..js"></script>
+		
+		<link href="../bootstrap-5.3.1-dist/css/bootstrap.css" rel="stylesheet">-->
+		
+		<link rel="stylesheet" href="style_site.css" type="text/css"/>
+		
+		<link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gst
+			atic.com/images?q=tbn:ANd9GcSw8gPvQutQC99r4jo_RhlHh3SfKKnZup-FrA&usqp=CAU"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@200&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<h1>
+			reef's game
+		</h1>
+		
+		<div id="help_cont">
+			<div id="unvisible">
+				
+			</div>
+		</div>
+		
+		<div>
+			<input type="text" id="name"/>
+		</div>
+		
+		<div id="grid">
+			<div class="btn">
+				<button class="button" id="btn1" onclick="on_get_score(1)">
+				
+				</button>
+			</div>
+			
+			<div class="btn">
+				<button class="button" id="btn2" onclick="on_get_score(2)">
+				
+				</button>
+			</div>
+			
+			<div class="btn">
+				<button class="button" id="btn3" onclick="on_get_score(3)">
+					
+				</button>
+			</div>
+			
+			<div class="btn">
+				<button class="button" id="btn4" onclick="on_get_score(4)">
+				
+				</button>
+			</div>
+			
+			<div class="btn">
+				<button class="button" id="btn5" onclick="on_get_score(5)">
+				
+				</button>
+			</div>
+			
+			<div class="btn">
+				<button class="button" id="btn6" onclick="on_get_score(6)">
+				
+				</button>
+			</div>
+			
+			<div class="btn">
+				<button class="button" id="btn7" onclick="on_get_score(7)">
+					
+				</button>
+			</div>
+			
+			<div class="btn">
+				<button class="button" id="btn8" onclick="on_get_score(8)">
+					
+				</button>
+			</div>
+			
+			<div class="btn">
+				<button class="button" id="btn9" onclick="on_get_score(9)">
+					
+				</button>
+			</div>
+		</div>
+		
+		<div class="flex">
+			<div id="score">
+				0
+			</div>
+			
+			<div id="time">
+				30
+			</div>
+			
+			<div>
+				<button onclick="start()" id="start_button">
+					start
+				</button>
+			</div>
+			
+			<div>
+				<button id="clear_button" onclick="
+					localStorage.setItem('user', '');
+					document.querySelector('#clear_button').disabled = true;
+				">
+					clear the history
+				</button>
+			</div>
+			
+			<div>
+				<a href="file:///C:/Users/Reef/Documents/web/index.html">
+					<button>
+						back
+					</button>
+				</a>
+			</div>
+			
+			<div>
+				<button id="helper" onclick="
+					document.querySelector('#helper').disabled = true;
+					document.querySelector('#help_cont')
+						.innerHTML = `
+							<div id='help_con'>
+								<div id='help_container'>
+									<div id='help'>
+										press start and then on the red buttons
+										<button onclick='clos()' id='close'>
+											&#935
+										</button>
+									</div>
+								</div>
+							</div>`;
+				">
+					help
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+
+html{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: black;
+}
+
+body{
+	position: absolute;
+	top: 8px;
+	bottom: 8px;
+	left: 0px;
+	right: 8px;
+	margin: 0;
+	background-color: white;
+}
+
+#btns,#btn_cont{
+	display: inline-block;
+}
+
+#visible{
+	position: absolute;
+	font-size: 100px;
+	top: 40%;
+	left: 40%;
+	visibility: hidden;
+}
+
+#ball{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 2;
+	visibility: hidden;
+}
+
+#left{
+	left: 70px;
+	background-color: black;
+	position: absolute;
+	width: 20px;
+	height: 100px;
+	top: 50px;
+	z-index: 2;
+	visibility: hidden;
+}
+
+#help_container{
+	position: absolute;
+	background-color: red;
+	width: 510px;
+	height: 82px;
+	left: 33%;
+	top: 20%;
+}
+
+#help_con{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 10;
+}
+
+#help{
+	position: absolute;
+	width: 500px;
+	background-color: white;
+	left: 5px;
+	top: 5px;
+}
+
+#unvisible{
+	position: absolute;
+	opacity: 0;
+}
+
+#close{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: red;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}

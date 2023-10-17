@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>game</title>
+		
+		<link rel="icon" type="image/x-icon" href="https://encrypted-tbn0
+			.gstatic.com/images?q=tbn:ANd9GcTKaH90g3KOjiRDw-5nJ0TSZXs0LyPBi8F-Vw&usqp=CAU">
+		
+		<link rel="stylesheet" href="style_game.css" type="text/css"/>
+		
+	</head>
+
+    <body onkeypress="move();" onkeyup="window.cancelAnimationFrame(request2);
+		request2 = '';
+	">
+		<div id="help_cont">
+			<div id="unvisible">
+				
+			</div>
+		</div>
+		<div id="btn">
+			<div id="btn_cont">
+				<button id="start" onclick="
+					start();
+					started = true
+				">
+					start
+				</button>
+			</div>
+			<div id="btns">
+				<button id="helper" onclick="
+					this.disabled = true;
+					x_speed = 0;
+					y_speed = 0;
+					document.querySelector('#help_cont')
+						.innerHTML = `
+							<div id='help_con'>
+								<div id='help_container'>
+									<div id='help'>
+										don't let the ball get in to your side
+										<br>
+										move your black peace with 'q' for up and 'a' for down
+										<br><br>
+										if it doesn't work play on english
+										<button onclick='clos()' id='close'>
+											&#935
+										</button>
+									</div>
+								</div>
+							</div>`;
+				">
+					help
+				</button>
+				
+				<a href="file:///C:/Users/Reef/Documents/web/index.html">
+					<button>
+						back
+					</button>
+				</a>
+			</div>
+		</div>
+		<div id="cont">
+			<div id="right_score" class="score"></div>
+		</div>
+		<div id="visible"></div>
+		<div id="ball"></div>
+		<div id="left"></div>
+		<script type="text/javascript" src="script_game.js"></script>
+	</body>
+</html>
