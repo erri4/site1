@@ -52,6 +52,10 @@ h1{
 	margin-left: 45%;
 }
 
+#game_over {
+    margin-left: 45%;
+}
+
 #parts{
 	display: flex;
 	justify-content: space-between;
