@@ -55,7 +55,7 @@ let start = function(){
 		localStorage.setItem("user", `${left}: ${score_left},<br> ${right}: ${score_right} <br><br> ${localStorage.getItem("user")}`)
 		document.body.innerHTML = `<h1>history
 		</h1><br>
-		<div class="history">${localStorage.getItem("user")}</div><div><a href="https://erri4.github.io/site1/game1/site.html" target="_self"><button>play again</button></a></div>`
+		<div class="history">${localStorage.getItem("user")}</div><div><a href="https://erri4.github.io/site1/game2/site2.html" target="_self"><button>play again</button></a></div>`
 	}, Number(`${time}000`))
 	document.querySelector("#start_button").disabled = true;
 }
