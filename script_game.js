@@ -10,6 +10,7 @@ let clos = function(){
 	document.querySelector('#helper').disabled = false;
 }
 
+let times = 0;
 let w = window.innerWidth;
 let h = window.innerHeight;
 let request1;
@@ -59,11 +60,65 @@ function isTouchLeft(ball) {
 	let ball_down = ball_top + 50;
 	if (ball_left <= posr && ball_left >= posr - 40){
 		if (xl == ball_top){
+			times ++;
+			if (times % 10 === 0){
+				if (x_speed > 0){
+					x_speed ++;
+				}
+				if (x_speed < 0){
+					x_speed -= 1;
+				}
+				if (dx > 0){
+					dx ++;
+				}
+				if (dx < 0){
+					dx -= 1;
+				}
+				if (y_speed > 0){
+					y_speed ++;
+				}
+				if (y_speed < 0){
+					y_speed -= 1;
+				}
+				if (dy > 0){
+					dy ++;
+				}
+				if (dy < 0){
+					dy -= 1;
+				}
+			}
 			return true;
 		}
 		else if (xl > ball_top){
 			if (ball_down > xl){
 				if (xl >= ball_top){
+					times ++;
+					if (times % 10 === 0){
+						if (x_speed > 0){
+							x_speed ++;
+						}
+						if (x_speed < 0){
+							x_speed -= 1;
+						}
+						if (dx > 0){
+							dx ++;
+						}
+						if (dx < 0){
+							dx -= 1;
+						}
+						if (y_speed > 0){
+							y_speed ++;
+						}
+						if (y_speed < 0){
+							y_speed -= 1;
+						}
+						if (dy > 0){
+							dy ++;
+						}
+						if (dy < 0){
+							dy -= 1;
+						}
+					}
 					return true;
 				}
 			}
@@ -71,6 +126,33 @@ function isTouchLeft(ball) {
 		else if (xl < ball_top){
 			if (ball_top < left_down){
 				if (xl <= ball_top){
+					times ++;
+					if (times % 10 === 0){
+						if (x_speed > 0){
+							x_speed ++;
+						}
+						if (x_speed < 0){
+							x_speed -= 1;
+						}
+						if (dx > 0){
+							dx ++;
+						}
+						if (dx < 0){
+							dx -= 1;
+						}
+						if (y_speed > 0){
+							y_speed ++;
+						}
+						if (y_speed < 0){
+							y_speed -= 1;
+						}
+						if (dy > 0){
+							dy ++;
+						}
+						if (dy < 0){
+							dy -= 1;
+						}
+					}
 					return true;
 				}
 			}
