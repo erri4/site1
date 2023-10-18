@@ -80,6 +80,18 @@ let start = function(){
 		for (let val in obj) {
 			usr += `${val}: ${obj[val]}<br>`;
 		}
-		document.body.innerHTML = `<br><div><h1>history:</h1></div><div class="history">${usr}</div><div id="game_over"><a href="https://erri4.github.io/site1/game1/site.html" target="_self"><button>play again</button></a></div>`;
+		document.body.innerHTML = `<div id="btn1"></div>
+  <div id="btn2"></div>
+  <div id="btn3"></div>
+  <div id="btn4"></div>
+  <div id="btn5"></div>
+  <div id="btn6"></div>
+  <div id="btn7"></div>
+  <div id="btn8"></div>
+  <div id="btn9"></div>
+  <br><div><h1>history:</h1>
+  </div><div class="history">${usr}</div>
+  <div id="game_over"><a href="https://erri4.github.io/site1/game1/site.html" target="_self">
+  <button>play again</button></a></div>`;
 }, Number(`${time}000`))
 }
