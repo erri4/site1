@@ -53,8 +53,6 @@ let start = function(){
 	setTimeout(() => {
 		let name = document.querySelector("#name").value
 		clearTimeout(time_out);
-		clearTimeout(time_out);
-		clearTimeout(time_out);
 		clearInterval(interval);
 		if (name === ""){
 			name = "anonymous"
