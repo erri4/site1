@@ -66,6 +66,9 @@ let start = function(){
 					name_score[`${name}`] = `${score}`;
 				}
 			}
+			else {
+				name_score[`${name}`] = `${score}`;
+			}
 		}
 		else {
 			name_score[`${name}`] = `${score}`;
