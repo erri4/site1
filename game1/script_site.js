@@ -62,7 +62,7 @@ let start = function(){
 		if (localStorage.getItem("user") !== ""){
 			name_score = JSON.parse(localStorage.getItem("user"));
 		}
-		if (Number(name_score[`${name}`]) <= score || name_score[`${name}`] === undefind){
+		if (Number(name_score[`${name}`]) <= score || !name_score[`${name}`]){
 			name_score[`${name}`] = `${score}`;
 		}
 		let sortable = [];
