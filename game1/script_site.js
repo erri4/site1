@@ -59,10 +59,10 @@ let start = function(){
 		}
 		clearInterval(timer);
 		let name_score = {}
-		if (localStorage.getItem("user") !== ""){
+		if (!localStorage.getItem("user")){
 			name_score = JSON.parse(localStorage.getItem("user"));
 		}
-		if (!name_score[`${name}`] || Number(name_score[`${name}`]) <= score){
+		if (name_score[`${name}`] !== undefind || Number(name_score[`${name}`]) <= score){
 			name_score[`${name}`] = `${score}`;
 		}
 		let sortable = [];
