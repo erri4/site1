@@ -61,14 +61,14 @@ let start = function(){
 		let name_score = {}
 		if (!localStorage.getItem("user")){
 			name_score = JSON.parse(localStorage.getItem("user"));
-		}
-		if (localStorage.getItem("user").split(name) !== [localStorage.getItem("user")]){
-			if (Number(name_score[`${name}`]) <= score){
+			if (localStorage.getItem("user").split(name) !== [localStorage.getItem("user")]){
+				if (Number(name_score[`${name}`]) <= score){
+					name_score[`${name}`] = `${score}`;
+				}
+			}
+			else {
 				name_score[`${name}`] = `${score}`;
 			}
-		}
-		else {
-			name_score[`${name}`] = `${score}`;
 		}
 		let sortable = [];
 		for (let val in name_score) {
