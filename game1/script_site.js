@@ -66,9 +66,9 @@ let start = function(){
 					name_score[`${name}`] = `${score}`;
 				}
 			}
-			else {
-				name_score[`${name}`] = `${score}`;
-			}
+		}
+		else {
+			name_score[`${name}`] = `${score}`;
 		}
 		let sortable = [];
 		for (let val in name_score) {
