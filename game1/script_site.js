@@ -8,6 +8,10 @@ let clos = function(){
 	document.querySelector('#helper').disabled = false;
 }
 
+let name_score = {};
+let sortable = [];
+let obj;
+let usr = ``;
 let time_out;
 let time = 30;
 let time_interval = 3
@@ -58,7 +62,7 @@ let start = function(){
 			name = "anonymous"
 		}
 		clearInterval(timer);
-		let name_score = {}
+		name_score = {};
 		if (localStorage.getItem("user")){
 			name_score = JSON.parse(localStorage.getItem("user"));
 			if (localStorage.getItem("user").split(name) !== [localStorage.getItem("user")]){
@@ -73,14 +77,14 @@ let start = function(){
 		else {
 			name_score[`${name}`] = `${score}`;
 		}
-		let sortable = [];
+		sortable = [];
 		for (let val in name_score) {
 			sortable.push([val, name_score[val]]);
 		}
 		sortable.sort((a, b) => {
 			return b[1] - a[1];
 		});
-		let obj = Object.fromEntries(sortable);
+		obj = Object.fromEntries(sortable);
 		localStorage.setItem("user", JSON.stringify(obj));
 		let usr = ``;
 		for (let val in obj) {
