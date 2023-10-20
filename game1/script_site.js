@@ -55,13 +55,13 @@ let start = function(){
 		}
 	}, 1000);
 	setTimeout(() => {
-		let name = String(document.querySelector("#name").value)
 		clearTimeout(time_out);
 		clearInterval(interval);
+		clearInterval(timer);
+		let name = String(document.querySelector("#name").value)
 		if (name === ""){
 			name = "anonymous"
 		}
-		clearInterval(timer);
 		name_score = {};
 		if (JSON.parse(localStorage.getItem("user")) !== {}){
 			name_score = JSON.parse(localStorage.getItem("user"));
@@ -86,11 +86,10 @@ let start = function(){
 		});
 		obj = Object.fromEntries(sortable);
 		localStorage.setItem("user", JSON.stringify(obj));
-		let usr = ``;
+		usr = ``;
 		for (let val in obj) {
 			usr += `${val}: ${obj[val]}<br>`;
-		}
-		document.body.innerHTML = `<div id="btn1"></div>
+		}document.body.innerHTML = `<div id="btn1"></div>
   <div id="btn2"></div>
   <div id="btn3"></div>
   <div id="btn4"></div>
