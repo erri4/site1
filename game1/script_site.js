@@ -55,7 +55,7 @@ let start = function(){
 		}
 	}, 1000);
 	setTimeout(() => {
-		let name = document.querySelector("#name").value
+		let name = String(document.querySelector("#name").value)
 		clearTimeout(time_out);
 		clearInterval(interval);
 		if (name === ""){
