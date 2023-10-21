@@ -261,8 +261,10 @@ let start = function() {
 	document.querySelector("#visible").innerHTML = 3;
 	setTimeout(() => {
 		clearInterval(timer);
-		x_speed = dx;
-		y_speed = dy;
+		x_speed = Math.abs(dx);
+		y_speed = Math.abs(dy);
+		dx = Math.abs(dx);
+		dy = Math.abs(dy);
 		ball.style.visibility = "visible";
 		left.style.visibility = "visible";
 		visible.style.visibility = "hidden";
