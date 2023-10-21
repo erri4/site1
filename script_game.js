@@ -23,7 +23,11 @@ let y = 0;
 let x_speed = 0;
 let y_speed = 0;
 let score_right = 0;
-let move = function() {
+document.addEventListener("keyup", () => {
+	window.cancelAnimationFrame(request2);
+	request2 = '';
+}
+document.addEventListener("keypress", (event) => {
 	let left = document.querySelector("#left");
 	if (x_speed && y_speed) {
 		 if (event.key == "ArrowUp"){
