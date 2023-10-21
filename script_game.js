@@ -25,17 +25,16 @@ let y_speed = 0;
 let score_right = 0;
 let move = function() {
 	let left = document.querySelector("#left");
-	let eve = event.key;
 	if (x_speed && y_speed) {
-		if (eve === "ArrowUp") {
+		 if (event.key == "ArrowUp"){
 			if (xl > 10){
 				request2 = window.requestAnimationFrame(() => {
 					xl -= 40;
 					left.style.top = `${xl}px`;
 				});
 			}
-		}
-		else if (eve === "ArrowDown") {
+		} 
+		else if (event.key == "ArrowDown"){
 			if (xl + 140 < window.innerHeight){
 				request2 = window.requestAnimationFrame(() => {
 					xl += 40;
