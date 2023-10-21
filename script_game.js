@@ -27,10 +27,10 @@ document.addEventListener("keyup", () => {
 	window.cancelAnimationFrame(request2);
 	request2 = '';
 });
-document.addEventListener("keypress", (event) => {
+document.addEventListener("keydown", (e) => {
 	let left = document.querySelector("#left");
 	if (x_speed && y_speed) {
-		 if (event.key == "ArrowUp"){
+		 if (e.key === "ArrowUp"){
 			if (xl > 10){
 				request2 = window.requestAnimationFrame(() => {
 					xl -= 40;
@@ -38,7 +38,7 @@ document.addEventListener("keypress", (event) => {
 				});
 			}
 		} 
-		else if (event.key == "ArrowDown"){
+		else if (e.key === "ArrowDown"){
 			if (xl + 140 < window.innerHeight){
 				request2 = window.requestAnimationFrame(() => {
 					xl += 40;
