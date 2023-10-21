@@ -1,4 +1,6 @@
 
+
+document.querySelector("#name").value = `${window.innerWidth}    ${window.innerHeight}`
 document.body.style.width = window.innerWidth - 16
 document.body.style.height = window.innerHeight - 16
 
