@@ -11,6 +11,10 @@ button{
 	cursor: pointer;
 }
 
+button:disabled{	
+	cursor: default;
+}
+
 h1{
 	font-family: 'Handjet', cursive;
 	margin-left:45%;
