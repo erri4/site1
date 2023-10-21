@@ -33,12 +33,12 @@ let rando_colo = function(){
 
 let start = function(){
 	document.querySelector("#start_button").disabled = true;
-	document.querySelector("#score_right").innerHTML = `${score_right}`;
-	document.querySelector("#score_left").innerHTML = `${score_left}`;
-	document.querySelector("#time").innerHTML = `${time}`;
+	document.querySelector("#score_right").innerHTML = `your score:${score_right}`;
+	document.querySelector("#score_left").innerHTML = `your score:${score_left}`;
+	document.querySelector("#time").innerHTML = `time:${time}`;
 	let interval = setInterval(rando_colo, 500)
 	let timer = setInterval(() => {
-			document.querySelector("#time").innerHTML = time;
+			document.querySelector("#time").innerHTML = `time:${time}`;
 			time -= 1;
 		}, 1000);
 	setTimeout(() => {
