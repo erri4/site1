@@ -187,7 +187,7 @@ function animate() {
 			x_speed = -x_speed;
 			dx = -dx;
 		}
-		if (x < 0) {
+		if (x < -1) {
 			score_right ++;
 			document.querySelector("#right_score").innerHTML = `the ball get in to your side ${score_right} times`;
 			x = window.innerWidth / 2;
