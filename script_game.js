@@ -182,7 +182,7 @@ function animate() {
 			w = window.innerWidth;
 		}
 	}
-	if (x + 59 > window.innerWidth || x < 0) {
+	if (x + 59 > window.innerWidth || x < -1) {
 		if (x + 59 > window.innerWidth) {
 			x_speed = -x_speed;
 			dx = -dx;
