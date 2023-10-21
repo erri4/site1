@@ -53,9 +53,12 @@ let start = function(){
 			right = "anonymous"
 		}
 		localStorage.setItem("user", `${left}: ${score_left},<br> ${right}: ${score_right} <br><br> ${localStorage.getItem("user")}`)
-		document.body.innerHTML = `<h1>history
-		</h1><br>
-		<div class="history">${localStorage.getItem("user")}</div><div id="game_over"><a href="https://erri4.github.io/site1/game2/site2.html" target="_self"><button>play again</button></a></div>`
+		document.body.innerHTML = `
+  			<div class="div" id="div_left"></div>
+     			<div class="div" id="div_right"></div>
+  			<h1>history
+			</h1><br>
+			<div class="history">${localStorage.getItem("user")}</div><div id="game_over"><a href="https://erri4.github.io/site1/game2/site2.html" target="_self"><button>play again</button></a></div>`
 	}, Number(`${time}000`))
 	document.querySelector("#start_button").disabled = true;
 }
