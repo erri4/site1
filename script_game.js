@@ -26,7 +26,7 @@ let score_right = 0;
 document.addEventListener("keyup", () => {
 	window.cancelAnimationFrame(request2);
 	request2 = '';
-}
+});
 document.addEventListener("keypress", (event) => {
 	let left = document.querySelector("#left");
 	if (x_speed && y_speed) {
@@ -47,7 +47,7 @@ document.addEventListener("keypress", (event) => {
 			}
 		}
 	}
-}
+});
 
 function isTouchLeft(ball) {
 	let left = document.querySelector("#left");
