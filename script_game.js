@@ -27,7 +27,6 @@ let move = function() {
 	let left = document.querySelector("#left");
 	let eve = event.key;
 	if (x_speed && y_speed) {
-		switch (event.keyCode) {
 		if (eve === "ArrowUp") {
 			if (xl > 10){
 				request2 = window.requestAnimationFrame(() => {
