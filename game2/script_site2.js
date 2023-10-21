@@ -54,8 +54,20 @@ let start = function(){
 		}
 		localStorage.setItem("user", `${left}: ${score_left},<br> ${right}: ${score_right} <br><br> ${localStorage.getItem("user")}`)
 		document.body.innerHTML = `
-  			<div class="div" id="div_left"></div>
-     			<div class="div" id="div_right"></div>
+  			<div class="div" id="div_left" style="
+     				color: white;
+			    	background-color: white;
+			   	padding: 0;
+				width: 0;
+    				height: 0;
+     			"></div>
+     			<div class="div" id="div_right" style="
+     				color: white;
+			    	background-color: white;
+			   	padding: 0;
+				width: 0;
+    				height: 0;
+     			"></div>
   			<h1>history
 			</h1><br>
 			<div class="history">${localStorage.getItem("user")}</div>
