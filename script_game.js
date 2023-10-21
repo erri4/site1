@@ -250,6 +250,7 @@ let change = function(t) {
 }
 
 let start = function() {
+	document.querySelector('#right_score').innerHTML = '';
 	window.cancelAnimationFrame(request1);
 	x = 0;
 	y = 0;
