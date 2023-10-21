@@ -47,8 +47,8 @@ let on_get_score = function(btn){
 }
 
 let start = function(){
-	document.querySelector("#score").innerHTML = `${score}`;
-	document.querySelector("#time").innerHTML = `${time}`;
+	document.querySelector("#score").innerHTML = `score:${score}`;
+	document.querySelector("#time").innerHTML = `time:${time}`;
 	document.querySelector("#start_button").disabled = true;
 	let interval = setInterval(func_btn, 500)
 	let timer = setInterval(() => {
