@@ -27,7 +27,7 @@ let move = function() {
 	let left = document.querySelector("#left");
 	let eve = event.key;
 	if (x_speed && y_speed) {
-		if (eve === "q") {
+		if (eve === "arrowAp") {
 			if (xl > 10){
 				request2 = window.requestAnimationFrame(() => {
 					xl -= 40;
@@ -35,7 +35,7 @@ let move = function() {
 				});
 			}
 		}
-		else if (eve === "a") {
+		else if (eve === "arrowDown") {
 			if (xl + 140 < window.innerHeight){
 				request2 = window.requestAnimationFrame(() => {
 					xl += 40;
