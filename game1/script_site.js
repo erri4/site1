@@ -37,11 +37,11 @@ let on_get_score = function(btn){
 		if (document.querySelector(`#btn${btn}`).classList.contains("red")){
 			score += 10;
 			document.querySelector(`#btn${btn}`).classList.remove("red");
-			document.querySelector("#score").innerHTML = score;
+			document.querySelector("#score").innerHTML = `score:${score}`;
 		}
 		else {
 			score -= 5;
-			document.querySelector("#score").innerHTML = score;
+			document.querySelector("#score").innerHTML = `score:${score}`;
 		}
 	}
 }
@@ -52,7 +52,7 @@ let start = function(){
 	document.querySelector("#start_button").disabled = true;
 	let interval = setInterval(func_btn, 500)
 	let timer = setInterval(() => {
-		document.querySelector("#time").innerHTML = time;
+		document.querySelector("#time").innerHTML = `time:${time}`;
 		time -= 1;
 		if (time === 20 || time === 10){
 			time_interval = Number(`${time}`) / 10
