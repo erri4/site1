@@ -186,11 +186,12 @@ function animate() {
 		}
 		if (x < 0) {
 			score_right ++;
-			document.querySelector("#right_score").innerHTML = score_right;
+			document.querySelector("#right_score").innerHTML = `your score:${score_right}`;
 			x = window.innerWidth / 2;
 			x_speed = -x_speed
 			dx = -dx;
 			y = 0;
+			times = 0;
 		}
 	}
 	if (y + 64 > window.innerHeight || y < 0) {
@@ -237,6 +238,7 @@ let change = function(t) {
 			<button id="restart" onclick="
 				score_right = 0;
 				document.querySelector('#right_score').innerHTML = '';
+    				times = 0;
 				start();">
 				restart
 			</button>
