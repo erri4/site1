@@ -1,4 +1,8 @@
 
+if (localStorage.getItem("user") === ""){
+	localStorage.setItem("user", "{}");
+}
+
 let clos = function(){
 	document.querySelector('#help_cont').innerHTML = `
 		<div id="unvisible">
