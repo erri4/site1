@@ -1,5 +1,10 @@
 body{
 	font-family: arial;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 }
 
 button{
@@ -11,7 +16,7 @@ button:disabled{
 }
 
 h1{
-	margin-left:43%;
+	margin-left: 43%;
 	font-family: 'Handjet', cursive;
 }
 
