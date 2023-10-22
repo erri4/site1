@@ -216,7 +216,7 @@ function animate() {
 
 let change = function(t) {
 	if (t) {
-		document.querySelector("#btn_cont").innerHTML = `
+		document.querySelector("#btn_con").innerHTML = `
 			<button id="start" onclick="
 				x_speed = dx;
 				y_speed = dy;
@@ -224,34 +224,16 @@ let change = function(t) {
 			">
 				continue
 			</button>
-			<button id="restart" onclick="
-				score_right = 0;
-				document.querySelector('#right_score').innerHTML = '';
-    				times = 0;
-				document.querySelector("#times_div").innerHTML = '';
-				start();
-    			">
-				restart
-			</button>
 			`
 	}
 	if (!t) {
-		document.querySelector("#btn_cont").innerHTML = `
+		document.querySelector("#btn_con").innerHTML = `
 			<button id="stop" onclick="
 				x_speed = 0;
 				y_speed = 0;
 				change(true);
 			">
 				stop
-			</button>
-			<button id="restart" onclick="
-				score_right = 0;
-				document.querySelector('#right_score').innerHTML = '';
-    				times = 0;
-				document.querySelector("#times_div").innerHTML = '';
-				start();
-    			">
-				restart
 			</button>
 			`
 	}
@@ -278,12 +260,14 @@ let start = function() {
 		visible.style.visibility = "hidden";
 		animate();
 		document.querySelector("#btn_cont").innerHTML = `
-		<button id="stop" onclick="
-			x_speed = 0;
-			y_speed = 0;
-			change(true);">
-			stop
-		</button>
+		<div id="btn_con">
+	  		<button id="stop" onclick="
+				x_speed = 0;
+				y_speed = 0;
+				change(true);">
+				stop
+			</button>
+  		</div>
 		<button id="restart" onclick="
 			score_right = 0;
 			document.querySelector('#right_score').innerHTML = '';
