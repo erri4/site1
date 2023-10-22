@@ -198,6 +198,7 @@ function animate() {
 			dx = -dx;
 			y = 0;
 			times = 0;
+			document.querySelector("#times_div").innerHTML = "";
 		}
 	}
 	if (y + 64 > window.innerHeight || y < 0) {
