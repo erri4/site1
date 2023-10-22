@@ -1,8 +1,8 @@
 
-
-document.querySelector("#name").value = `${window.innerWidth}    ${window.innerHeight}`
-document.body.style.width = window.innerWidth - 16
-document.body.style.height = window.innerHeight - 16
+if (window.innerWidth < 1253){
+	document.body.style.width = 200px
+}
+document.body.style.height = 0
 
 if (localStorage.getItem("user") === ""){
 	localStorage.setItem("user", "{}");
