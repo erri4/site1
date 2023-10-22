@@ -64,6 +64,7 @@ function isTouchLeft(ball) {
 	if (ball_left <= posr && ball_left >= posr - 40){
 		if (xl == ball_top){
 			times ++;
+			document.querySelector("times_div") = `you stoped the ball ${times} times`;
 			if (times % 10 === 0){
 				if (x_speed > 0){
 					x_speed ++;
@@ -96,6 +97,7 @@ function isTouchLeft(ball) {
 			if (ball_down > xl){
 				if (xl >= ball_top){
 					times ++;
+					document.querySelector("times_div") = `you stoped the ball ${times} times`;
 					if (times % 10 === 0){
 						if (x_speed > 0){
 							x_speed ++;
@@ -130,6 +132,7 @@ function isTouchLeft(ball) {
 			if (ball_top < left_down){
 				if (xl <= ball_top){
 					times ++;
+					document.querySelector("times_div") = `you stoped the ball ${times} times`;
 					if (times % 10 === 0){
 						if (x_speed > 0){
 							x_speed ++;
@@ -224,7 +227,10 @@ let change = function(t) {
 			<button id="restart" onclick="
 				score_right = 0;
 				document.querySelector('#right_score').innerHTML = '';
-				start();">
+    				times = 0;
+				document.querySelector("times_div") = '';
+				start();
+    			">
 				restart
 			</button>
 			`
@@ -242,7 +248,9 @@ let change = function(t) {
 				score_right = 0;
 				document.querySelector('#right_score').innerHTML = '';
     				times = 0;
-				start();">
+				document.querySelector("times_div") = '';
+				start();
+    			">
 				restart
 			</button>
 			`
@@ -279,7 +287,10 @@ let start = function() {
 		<button id="restart" onclick="
 			score_right = 0;
 			document.querySelector('#right_score').innerHTML = '';
-			start();">
+			times = 0;
+			document.querySelector("times_div") = '';
+			start();
+  		">
 			restart
 		</button>
 		`
