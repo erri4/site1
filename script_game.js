@@ -272,7 +272,7 @@ let start = function() {
 			score_right = 0;
 			document.querySelector('#right_score').innerHTML = '';
 			times = 0;
-			document.querySelector("#times_div").innerHTML = '';
+			document.querySelector('#times_div').innerHTML = '';
 			start();
   		">
 			restart
