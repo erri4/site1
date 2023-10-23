@@ -1,10 +1,7 @@
 
-if (window.innerWidth < 1253){
-	document.body.style.width = "200px"
-}
 document.body.style.height = "0"
 
-if (localStorage.getItem("user") === ""){
+if (localStorage.getItem("user") === "" || localStorage.getItem("user") === null){
 	localStorage.setItem("user", "{}");
 }
 
