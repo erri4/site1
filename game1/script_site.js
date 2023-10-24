@@ -1,6 +1,4 @@
 
-document.body.style.height = "0"
-
 if (localStorage.getItem("user") === "" || localStorage.getItem("user") === null){
 	localStorage.setItem("user", "{}");
 }
