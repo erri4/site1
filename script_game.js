@@ -66,30 +66,10 @@ function isTouchLeft(ball) {
 			times ++;
 			document.querySelector("#times_div").innerHTML = `you stoped the ball ${times} times`;
 			if (times % 10 === 0){
-				if (x_speed > 0){
-					x_speed ++;
-				}
-				if (x_speed < 0){
-					x_speed -= 1;
-				}
-				if (dx > 0){
-					dx ++;
-				}
-				if (dx < 0){
-					dx -= 1;
-				}
-				if (y_speed > 0){
-					y_speed ++;
-				}
-				if (y_speed < 0){
-					y_speed -= 1;
-				}
-				if (dy > 0){
-					dy ++;
-				}
-				if (dy < 0){
-					dy -= 1;
-				}
+				x_speed += (Math.abs(x_speed))/x_speed
+				y_speed += (Math.abs(y_speed))/y_speed
+				dx += (Math.abs(dx))/dx
+				dy += (Math.abs(dy))/dy
 			}
 			return true;
 		}
@@ -99,30 +79,10 @@ function isTouchLeft(ball) {
 					times ++;
 					document.querySelector("#times_div").innerHTML = `you stoped the ball ${times} times`;
 					if (times % 10 === 0){
-						if (x_speed > 0){
-							x_speed ++;
-						}
-						if (x_speed < 0){
-							x_speed -= 1;
-						}
-						if (dx > 0){
-							dx ++;
-						}
-						if (dx < 0){
-							dx -= 1;
-						}
-						if (y_speed > 0){
-							y_speed ++;
-						}
-						if (y_speed < 0){
-							y_speed -= 1;
-						}
-						if (dy > 0){
-							dy ++;
-						}
-						if (dy < 0){
-							dy -= 1;
-						}
+						x_speed += (Math.abs(x_speed))/x_speed
+						y_speed += (Math.abs(y_speed))/y_speed
+						dx += (Math.abs(dx))/dx
+						dy += (Math.abs(dy))/dy
 					}
 					return true;
 				}
@@ -134,30 +94,10 @@ function isTouchLeft(ball) {
 					times ++;
 					document.querySelector("#times_div").innerHTML = `you stoped the ball ${times} times`;
 					if (times % 10 === 0){
-						if (x_speed > 0){
-							x_speed ++;
-						}
-						if (x_speed < 0){
-							x_speed -= 1;
-						}
-						if (dx > 0){
-							dx ++;
-						}
-						if (dx < 0){
-							dx -= 1;
-						}
-						if (y_speed > 0){
-							y_speed ++;
-						}
-						if (y_speed < 0){
-							y_speed -= 1;
-						}
-						if (dy > 0){
-							dy ++;
-						}
-						if (dy < 0){
-							dy -= 1;
-						}
+						x_speed += (Math.abs(x_speed))/x_speed
+						y_speed += (Math.abs(y_speed))/y_speed
+						dx += (Math.abs(dx))/dx
+						dy += (Math.abs(dy))/dy
 					}
 					return true;
 				}
