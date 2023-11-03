@@ -1,4 +1,5 @@
-
+document.querySelector(":root").style["--width"] = window.innerWidth
+document.querySelector(":root").style["--height"] = window.innerHeight
 if (localStorage.getItem("user") === "" || localStorage.getItem("user") === null){
 	localStorage.setItem("user", "{}");
 }
