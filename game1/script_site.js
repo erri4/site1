@@ -1,7 +1,5 @@
-document.querySelector(":root").style["--width"] = `${window.innerWidth}px`;
-document.querySelector(":root").style["--height"] = `${window.innerHeight}px`;
-//document.body.style.width = "var(--width)";
-//document.body.style.height = "var(--height)";
+document.body.style.width = `${window.innerWidth}px`;
+document.body.style.height = `${window.innerHeight}px`;
 if (localStorage.getItem("user") === "" || localStorage.getItem("user") === null){
 	localStorage.setItem("user", "{}");
 }
