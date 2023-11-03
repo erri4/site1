@@ -4,6 +4,11 @@ if (localStorage.getItem("user") === "" || localStorage.getItem("user") === null
 	localStorage.setItem("user", "{}");
 }
 
+requestAnimationFrame(() => {
+	document.body.style.width = `${window.innerWidth}px`;
+	document.body.style.height = `${window.innerHeight}px`;
+});
+
 let clos = function(){
 	document.querySelector('#help_cont').innerHTML = `
 		<div id="unvisible">
