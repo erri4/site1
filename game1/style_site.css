@@ -1,11 +1,6 @@
-:root{
-	--width: 0;
-	--height: 0;
-}
-
 body{
-	height: var(--height);
-	width: var(--width);
+	height: 0;
+	width: 0;
 	font-family: arial;
 	position: absolute;
 	top: 0px;
