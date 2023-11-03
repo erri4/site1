@@ -4,7 +4,7 @@ if (localStorage.getItem("user") === "" || localStorage.getItem("user") === null
 	localStorage.setItem("user", "{}");
 }
 
-requestAnimationFrame(() => {
+let r = requestAnimationFrame(() => {
 	document.body.style.width = `${window.innerWidth}px`;
 	document.body.style.height = `${window.innerHeight}px`;
 });
