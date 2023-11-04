@@ -4,9 +4,15 @@ if (localStorage.getItem("user") === "" || localStorage.getItem("user") === null
 	localStorage.setItem("user", "{}");
 }
 let r;
+let h = window.innerHeight;
+let w = window.innerWidth;
 let size = function(){
-	document.body.style.width = `${window.innerWidth}px`;
-	document.body.style.height = `${window.innerHeight}px`;
+	if (w !== window.innerWidth){
+		document.body.style.width = `${window.innerWidth}px`;
+	}
+	if (h !== window.innerWidth){
+		document.body.style.height = `${window.innerHeight}px`;
+	}
 	r = window.requestAnimationFrame(size);
 }
 r = window.requestAnimationFrame(size);
