@@ -20,13 +20,13 @@ h1{
 	border-radius: 5px;
 	font-size: 18px;
 	font-family: var(--e-global-typography-accent-font-family ), Sans-serif;
-    font-weight: var(--e-global-typography-accent-font-weight );
+    	font-weight: var(--e-global-typography-accent-font-weight );
 }
 
 .flex_row{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 15%;
+	margin-right: 15%;
 }
