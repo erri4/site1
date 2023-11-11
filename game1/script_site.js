@@ -1,21 +1,8 @@
-document.body.style.width = `${window.innerWidth}px`;
-document.body.style.height = `${window.innerHeight}px`;
-if (localStorage.getItem("user") === "" || localStorage.getItem("user") === null){
+if (!e){
 	localStorage.setItem("user", "{}");
 }
-let r;
-let h = window.innerHeight;
-let w = window.innerWidth;
-let size = function(){
-	if (w !== window.innerWidth){
-		document.body.style.width = `${window.innerWidth}px`;
-	}
-	if (h !== window.innerWidth){
-		document.body.style.height = `${window.innerHeight}px`;
-	}
-	r = window.requestAnimationFrame(size);
-}
-r = window.requestAnimationFrame(size);
+document.body.style.width = `${window.innerHeight}px`;
+document.body.style.height = `${window.innerWidth}px`;
 let clos = function(){
 	document.querySelector('#help_cont').innerHTML = `
 		<div id="unvisible">
