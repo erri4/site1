@@ -1,4 +1,4 @@
-if (!e){
+if (!localStorage.getItem("user")){
 	localStorage.setItem("user", "{}");
 }
 document.body.style.width = `${window.innerHeight}px`;
