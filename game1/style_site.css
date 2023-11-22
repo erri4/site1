@@ -1,12 +1,10 @@
 body{
-	/*height: 0;
-	width: 0;*/
 	font-family: arial;
 	position: absolute;
-	/*top: 0px;
+	top: 0px;
 	bottom: 0px;
 	left: 0px;
-	right: 0px;*/
+	right: 0px;
 }
 
 button{
