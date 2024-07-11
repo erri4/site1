@@ -133,7 +133,7 @@ function animate() {
 		if (x < -1) {
 			score_right ++;
 			document.querySelector("#right_score").innerHTML = `the ball get in to your side ${score_right} times`;
-			x = window.innerWidth / 2;
+			x = Math.floor(Math.random() * (window.innerWidth – 100 + 1) + 100);
 			x_speed = -x_speed
 			dx = -dx;
 			y = 0;
